@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'valentines-market';
+  title = 'fucking coool awesome';
+
+  callbackEvent(a: string): void {
+    console.log('app component event: '+ a);
+  };
 }

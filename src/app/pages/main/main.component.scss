@@ -1,0 +1,103 @@
+.container {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-areas: 
+        "tv channels";
+
+    padding: 5rem 5rem;
+    grid-gap: 5rem;
+}
+
+.tv {
+    grid-area: tv;
+    width: 950px;
+    height: 487px;
+    display: grid;
+    grid-template-rows: min-content 1fr min-content;
+    grid-template-columns: min-content 2fr min-content min-content;
+    grid-template-areas: 
+        "top top top right2"
+        "left center right right2"
+        "bottom bottom bottom right2";
+}
+.tv-top {
+    grid-area: top;
+    display: flex;
+    align-items: flex-end;
+
+    img {
+        width: 100%;
+    }
+}
+.tv-left {
+    grid-area: left;
+
+    display: flex;
+    justify-content: right;
+
+    img {
+        height: 100%;
+    }
+}
+.tv-center {
+    grid-area: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+}
+.tv-right {
+    grid-area: right;
+
+    display: flex;
+    justify-content: left;
+
+    img {
+        height: 100%;
+    }
+}
+.tv-right2 {
+    grid-area: right2;
+
+    display: flex;
+    justify-content: left;
+
+    img {
+        height: 100%;
+    }
+}
+.tv-bottom {
+    grid-area: bottom;
+
+    display: flex;
+    align-items: flex-start;
+
+    img {
+        width: 100%;
+    }
+}
+
+// .channels {
+//     //padding: 0 !important;
+//     background-color:#eca1a6;
+//     border-radius: 25px;
+//     //font-size: 100px;    
+// }
+
+.row-color-even{
+    background-color: white;
+}
+
+.row-color-odd{
+    background-color:pink;
+}
+ 
+.mat-card {
+    background: none;
+    border-radius: 25px;
+}
+
+.mat-button {
+    justify-content: baseline;
+    display: inline-block;
+}
