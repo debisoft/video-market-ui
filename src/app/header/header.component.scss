@@ -13,9 +13,16 @@
 
 }
 .logo {
-    width: 10vw;
     height: 8vh;
 }
 .header-item {
     margin: 1rem 2rem;
+}
+
+.header-item {
+  //text-decoration: none;
+}
+
+.mat-ink-bar {
+  background-color: #ff0000 !important;
 }

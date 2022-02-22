@@ -1,6 +1,8 @@
-<youtube-player 
-    [videoId]="videoId" 
+<youtube-player
+    [videoId]="videoId"
     [height]="380"
     [width]="680"
+    (stateChange)="onStateChange($event)"
+    (mouseover)="onMouseover($event)"
     >
 </youtube-player>
