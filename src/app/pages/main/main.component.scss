@@ -1,18 +1,20 @@
 .container {
-    display: grid;
     grid-template-columns: auto auto;
     grid-template-areas:
         "tv channels";
-
     padding: 5rem 5rem;
     grid-gap: 5rem;
     align-items: center;
 }
 
+
+
+@media (min-width: 40em) {
+
 .tv {
     grid-area: tv;
-    width: 950px;
-    height: 487px;
+    max-width: 950px; //changed
+    max-height: 487px; //changed
     display: grid;
     grid-template-rows: min-content 1fr min-content;
     grid-template-columns: min-content 2fr min-content min-content;
@@ -21,6 +23,8 @@
         "left center right right2"
         "bottom bottom bottom right2";
 }
+}
+
 .tv-top {
     grid-area: top;
     display: flex;
@@ -32,7 +36,6 @@
 }
 .tv-left {
     grid-area: left;
-
     display: flex;
     justify-content: right;
 }
@@ -61,7 +64,6 @@
 }
 .tv-bottom {
     grid-area: bottom;
-
     display: flex;
     align-items: flex-start;
 
@@ -70,12 +72,6 @@
     }
 }
 
-//.channels {
-//     //padding: 0 !important;
-//     background-color:#eca1a6;
-//     border-radius: 25px;
-//     //font-size: 100px;
-// }
 
 .row-color-even{
     background-color: white;
@@ -85,10 +81,6 @@
     background-color:pink;
 }
 
-.mat-card {
-    background: none;
-    border-radius: 25px;
-}
 
 .mat-button {
     justify-content: baseline;
@@ -97,4 +89,18 @@
 
 .mat-list-item.mat-list-single-selected-option {
   background: #c66153
+}
+@media (min-width: 40em) {
+    .container {
+        display: flex;
+        
+    }
+}
+
+@media (min-width: 40em) {
+    .mat-card {
+        background: none;
+        border-radius: 25px;
+    }
+    
 }

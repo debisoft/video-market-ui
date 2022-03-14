@@ -1,3 +1,5 @@
+<p style="background-image:  src('./assets/img/back2.jpg');">
+    
 <div class="container">
     <div class="tv">
         <div class="tv-top">
@@ -22,9 +24,6 @@
 <mat-card>
     <mat-card-actions>
 
-
-
-
     <div class="channels">
         <mat-selection-list (selectionChange)="setVideo($event)" [multiple]="false">
         <mat-list-option *ngFor="let video of videoList; let i=index" [value]="video" >
@@ -38,11 +37,9 @@
           </div>
         </button>
 
-
         </mat-list-option>
         </mat-selection-list>
     </div>
-
 
 </mat-card-actions>
 </mat-card>
