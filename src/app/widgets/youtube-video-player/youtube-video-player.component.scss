@@ -1,0 +1,37 @@
+iframe {
+  width: 100% !important;
+}
+
+.player-normal {
+  display: block;
+}
+.player-mobile-landscape {
+  display: none;
+}
+.player-mobile-portrait {
+  display: none;
+}
+
+@media screen and (max-width: 768px) and (orientation: landscape) {
+  .player-normal {
+    display: none;
+  }
+  .player-mobile-landscape {
+    display: block;
+  }
+  .player-mobile-portrait {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) and (orientation: portrait) {
+  .player-normal {
+    display: none;
+  }
+  .player-mobile-landscape {
+    display: none;
+  }
+  .player-mobile-portrait {
+    display: block;
+  }
+}

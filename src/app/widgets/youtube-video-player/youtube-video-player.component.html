@@ -1,3 +1,4 @@
+<div class="player-normal">
 <youtube-player
     [videoId]="videoId"
     [height]="380"
@@ -6,3 +7,24 @@
     (mouseover)="onMouseover($event)"
     >
 </youtube-player>
+</div>
+<div class="player-mobile-landscape">
+<youtube-player
+    [videoId]="videoId"
+    [height]="256"
+    [width]="384"
+    (stateChange)="onStateChange($event)"
+    (mouseover)="onMouseover($event)"
+    >
+</youtube-player>
+</div>
+<div class="player-mobile-portrait">
+<youtube-player
+    [videoId]="videoId"
+    [height]="256"
+    [width]="256"
+    (stateChange)="onStateChange($event)"
+    (mouseover)="onMouseover($event)"
+    >
+</youtube-player>
+</div>

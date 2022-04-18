@@ -3,3 +3,19 @@
   color: white;
   font-size: x-large;
 }
+
+@media screen and (max-width: 768px) and (orientation: landscape) {
+   .content {
+      text-align: center;
+      color: black;
+      font-size: large;
+  }
+}
+
+@media screen and (max-width: 768px) and (orientation: portrait) {
+   .content {
+      text-align: center;
+      color: grey;
+      font-size: large;
+  }
+}
